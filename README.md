@@ -21,6 +21,9 @@ https://wjwoodrow.wordpress.com/2013/11/22/adjusting-video-contrast-brightness-s
 filter 種類介紹
 http://www.jianshu.com/p/c5bfd55a312d
 
+ffmpeg doc
+https://ffmpeg.org/ffmpeg-filters.html
+
 ## 其他串流 相關
 
 http://www.jianshu.com/p/447df915984e
