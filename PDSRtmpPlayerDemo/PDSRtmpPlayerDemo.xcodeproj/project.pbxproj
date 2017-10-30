@@ -75,6 +75,7 @@
 		A08E9AA11FA306E3005D116E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		A08E9AA21FA306E7005D116E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A08E9AA31FA306EC005D116E /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		A0E7F8CC1FA6F6C4001FA21E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		F8D172891F7C01F2002F1692 /* PDSRtmpPlayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDSRtmpPlayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8D1728C1F7C01F2002F1692 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F8D1728D1F7C01F2002F1692 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -125,6 +126,7 @@
 		A08E9A8E1FA3058D005D116E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A0E7F8CC1FA6F6C4001FA21E /* Security.framework */,
 				A08E9AA31FA306EC005D116E /* VideoToolbox.framework */,
 				A08E9AA21FA306E7005D116E /* UIKit.framework */,
 				A08E9AA11FA306E3005D116E /* QuartzCore.framework */,
@@ -427,6 +429,7 @@
 				INFOPLIST_FILE = PDSRtmpPlayerDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-lstdc++";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.PDSRtmpPlayerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -442,6 +445,7 @@
 				INFOPLIST_FILE = PDSRtmpPlayerDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-lstdc++";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.PDSRtmpPlayerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
