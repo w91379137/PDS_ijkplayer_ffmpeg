@@ -17,17 +17,23 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    NSString *urlPath = @"http://live.hkstv.hk.lxdns.com/live/hks/playlist.m3u8";
-    NSURL *url = [NSURL URLWithString:urlPath];
-    self.player = [[IJKFFMoviePlayerController alloc] initWithContentURL:url withOptions:nil];
+-(void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
     
-    self.player.view.frame = self.view.bounds;
-    [self.view addSubview:self.player.view];
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        //NSString *urlPath = @"http://live.hkstv.hk.lxdns.com/live/hks/playlist.m3u8";
+        NSString *urlPath = @"rtmp://live.hkstv.hk.lxdns.com/live/hks";
+        NSURL *url = [NSURL URLWithString:urlPath];
+        self.player = [[IJKFFMoviePlayerController alloc] initWithContentURL:url withOptions:nil];
+        
+        self.player.view.frame = self.view.bounds;
+        [self.view addSubview:self.player.view];
+        
+        [self.player prepareToPlay];
+        [self.player play];
+    });
     
-    [self.player prepareToPlay];
-    [self.player play];
+    
 }
 
 @end
