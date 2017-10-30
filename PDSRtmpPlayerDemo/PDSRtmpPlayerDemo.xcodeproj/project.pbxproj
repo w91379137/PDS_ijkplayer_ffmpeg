@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A08E9A8F1FA3058D005D116E /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A08E9A871FA3055B005D116E /* IJKMediaFramework.framework */; };
+		A08E9A911FA305C7005D116E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A08E9A901FA305AA005D116E /* AudioToolbox.framework */; };
+		A08E9A931FA30686005D116E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A08E9A921FA30680005D116E /* AVFoundation.framework */; };
+		A08E9A951FA306AC005D116E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A08E9A941FA3069A005D116E /* CoreGraphics.framework */; };
+		A08E9A971FA306B7005D116E /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A08E9A961FA306B3005D116E /* CoreMedia.framework */; };
+		A08E9A991FA306C0005D116E /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A08E9A981FA306BC005D116E /* CoreVideo.framework */; };
+		A08E9A9B1FA306C8005D116E /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A08E9A9A1FA306C8005D116E /* libbz2.tbd */; };
+		A08E9A9D1FA306D0005D116E /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A08E9A9C1FA306D0005D116E /* libz.tbd */; };
+		A08E9AA41FA306F0005D116E /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A08E9AA31FA306EC005D116E /* VideoToolbox.framework */; };
+		A08E9AA51FA306F6005D116E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A08E9AA21FA306E7005D116E /* UIKit.framework */; };
+		A08E9AA61FA306FB005D116E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A08E9AA11FA306E3005D116E /* QuartzCore.framework */; };
+		A08E9AA71FA30707005D116E /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A08E9AA01FA306DF005D116E /* OpenGLES.framework */; };
+		A08E9AA81FA3070F005D116E /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A08E9A9F1FA306DA005D116E /* MobileCoreServices.framework */; };
+		A08E9AA91FA30719005D116E /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A08E9A9E1FA306D5005D116E /* MediaPlayer.framework */; };
 		F8D1728E1F7C01F2002F1692 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D1728D1F7C01F2002F1692 /* AppDelegate.m */; };
 		F8D172911F7C01F2002F1692 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D172901F7C01F2002F1692 /* ViewController.m */; };
 		F8D172941F7C01F2002F1692 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8D172921F7C01F2002F1692 /* Main.storyboard */; };
@@ -15,7 +29,52 @@
 		F8D1729C1F7C01F2002F1692 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D1729B1F7C01F2002F1692 /* main.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A08E9A861FA3055B005D116E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A08E9A801FA3055B005D116E /* IJKMediaPlayer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E654EA8A1B6B27E600B0F2D0;
+			remoteInfo = IJKMediaFramework;
+		};
+		A08E9A881FA3055B005D116E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A08E9A801FA3055B005D116E /* IJKMediaPlayer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5450B0431E63EA4300568494;
+			remoteInfo = IJKMediaFrameworkWithSSL;
+		};
+		A08E9A8A1FA3055B005D116E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A08E9A801FA3055B005D116E /* IJKMediaPlayer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E654EA941B6B27E600B0F2D0;
+			remoteInfo = IJKMediaFrameworkTests;
+		};
+		A08E9A8C1FA3057F005D116E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A08E9A801FA3055B005D116E /* IJKMediaPlayer.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E654EA891B6B27E600B0F2D0;
+			remoteInfo = IJKMediaFramework;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		A08E9A801FA3055B005D116E /* IJKMediaPlayer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IJKMediaPlayer.xcodeproj; path = "ijkplayer-ios/ios/IJKMediaPlayer/IJKMediaPlayer.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		A08E9A901FA305AA005D116E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		A08E9A921FA30680005D116E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A08E9A941FA3069A005D116E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A08E9A961FA306B3005D116E /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		A08E9A981FA306BC005D116E /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		A08E9A9A1FA306C8005D116E /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		A08E9A9C1FA306D0005D116E /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		A08E9A9E1FA306D5005D116E /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		A08E9A9F1FA306DA005D116E /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		A08E9AA01FA306DF005D116E /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		A08E9AA11FA306E3005D116E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A08E9AA21FA306E7005D116E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A08E9AA31FA306EC005D116E /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
 		F8D172891F7C01F2002F1692 /* PDSRtmpPlayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDSRtmpPlayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8D1728C1F7C01F2002F1692 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F8D1728D1F7C01F2002F1692 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -33,17 +92,62 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A08E9AA91FA30719005D116E /* MediaPlayer.framework in Frameworks */,
+				A08E9AA81FA3070F005D116E /* MobileCoreServices.framework in Frameworks */,
+				A08E9AA71FA30707005D116E /* OpenGLES.framework in Frameworks */,
+				A08E9AA61FA306FB005D116E /* QuartzCore.framework in Frameworks */,
+				A08E9AA51FA306F6005D116E /* UIKit.framework in Frameworks */,
+				A08E9AA41FA306F0005D116E /* VideoToolbox.framework in Frameworks */,
+				A08E9A991FA306C0005D116E /* CoreVideo.framework in Frameworks */,
+				A08E9A9D1FA306D0005D116E /* libz.tbd in Frameworks */,
+				A08E9A9B1FA306C8005D116E /* libbz2.tbd in Frameworks */,
+				A08E9A971FA306B7005D116E /* CoreMedia.framework in Frameworks */,
+				A08E9A951FA306AC005D116E /* CoreGraphics.framework in Frameworks */,
+				A08E9A931FA30686005D116E /* AVFoundation.framework in Frameworks */,
+				A08E9A911FA305C7005D116E /* AudioToolbox.framework in Frameworks */,
+				A08E9A8F1FA3058D005D116E /* IJKMediaFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A08E9A811FA3055B005D116E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A08E9A871FA3055B005D116E /* IJKMediaFramework.framework */,
+				A08E9A891FA3055B005D116E /* IJKMediaFrameworkWithSSL.framework */,
+				A08E9A8B1FA3055B005D116E /* IJKMediaFrameworkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A08E9A8E1FA3058D005D116E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A08E9AA31FA306EC005D116E /* VideoToolbox.framework */,
+				A08E9AA21FA306E7005D116E /* UIKit.framework */,
+				A08E9AA11FA306E3005D116E /* QuartzCore.framework */,
+				A08E9AA01FA306DF005D116E /* OpenGLES.framework */,
+				A08E9A9F1FA306DA005D116E /* MobileCoreServices.framework */,
+				A08E9A9E1FA306D5005D116E /* MediaPlayer.framework */,
+				A08E9A9C1FA306D0005D116E /* libz.tbd */,
+				A08E9A9A1FA306C8005D116E /* libbz2.tbd */,
+				A08E9A981FA306BC005D116E /* CoreVideo.framework */,
+				A08E9A961FA306B3005D116E /* CoreMedia.framework */,
+				A08E9A941FA3069A005D116E /* CoreGraphics.framework */,
+				A08E9A921FA30680005D116E /* AVFoundation.framework */,
+				A08E9A901FA305AA005D116E /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F8D172801F7C01F2002F1692 = {
 			isa = PBXGroup;
 			children = (
 				F8D1728B1F7C01F2002F1692 /* PDSRtmpPlayerDemo */,
 				F8D1728A1F7C01F2002F1692 /* Products */,
+				A08E9A8E1FA3058D005D116E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +162,7 @@
 		F8D1728B1F7C01F2002F1692 /* PDSRtmpPlayerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A08E9A801FA3055B005D116E /* IJKMediaPlayer.xcodeproj */,
 				F8D172951F7C01F2002F1692 /* Assets.xcassets */,
 				F8D172971F7C01F2002F1692 /* LaunchScreen.storyboard */,
 				F8D172921F7C01F2002F1692 /* Main.storyboard */,
@@ -85,6 +190,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				A08E9A8D1FA3057F005D116E /* PBXTargetDependency */,
 			);
 			name = PDSRtmpPlayerDemo;
 			productName = PDSRtmpPlayerDemo;
@@ -117,12 +223,42 @@
 			mainGroup = F8D172801F7C01F2002F1692;
 			productRefGroup = F8D1728A1F7C01F2002F1692 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A08E9A811FA3055B005D116E /* Products */;
+					ProjectRef = A08E9A801FA3055B005D116E /* IJKMediaPlayer.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				F8D172881F7C01F2002F1692 /* PDSRtmpPlayerDemo */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		A08E9A871FA3055B005D116E /* IJKMediaFramework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = IJKMediaFramework.framework;
+			remoteRef = A08E9A861FA3055B005D116E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A08E9A891FA3055B005D116E /* IJKMediaFrameworkWithSSL.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = IJKMediaFrameworkWithSSL.framework;
+			remoteRef = A08E9A881FA3055B005D116E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A08E9A8B1FA3055B005D116E /* IJKMediaFrameworkTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = IJKMediaFrameworkTests.xctest;
+			remoteRef = A08E9A8A1FA3055B005D116E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F8D172871F7C01F2002F1692 /* Resources */ = {
@@ -149,6 +285,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A08E9A8D1FA3057F005D116E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IJKMediaFramework;
+			targetProxy = A08E9A8C1FA3057F005D116E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F8D172921F7C01F2002F1692 /* Main.storyboard */ = {
@@ -279,7 +423,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7ZCDHZ7BQ8;
+				DEVELOPMENT_TEAM = LJ4355LK53;
 				INFOPLIST_FILE = PDSRtmpPlayerDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -294,7 +438,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7ZCDHZ7BQ8;
+				DEVELOPMENT_TEAM = LJ4355LK53;
 				INFOPLIST_FILE = PDSRtmpPlayerDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

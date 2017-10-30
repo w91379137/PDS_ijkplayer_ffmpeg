@@ -7,8 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "../ijkplayer-ios/ios/IJKMediaPlayer/IJKMediaFramework/IJKMediaFramework.h"
+//#import "../ijkplayer-ios/ios/IJKMediaPlayer/IJKMediaPlayer/IJKFFMoviePlayerController.h"
 
 @interface ViewController ()
+
+@property(nonatomic, strong) IJKFFMoviePlayerController *player;
 
 @end
 
@@ -16,14 +20,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    NSString *urlPath = @"rtmp://live.hkstv.hk.lxdns.com/live/hks";
+    NSURL *url = [NSURL URLWithString:urlPath];
+    self.player = [[IJKFFMoviePlayerController alloc] initWithContentURL:url withOptions:nil];
+    
+    self.player.view.frame = self.view.bounds;
+    [self.view addSubview:self.player.view];
+    
+    [self.player prepareToPlay];
+    [self.player play];
 }
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 
 @end
