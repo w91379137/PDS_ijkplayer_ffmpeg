@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A0766DE01FA9A91700B78BEC /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = A0766DDD1FA9A91600B78BEC /* index.html */; };
+		A0766DE21FA9AA0000B78BEC /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0766DE11FA9A9FD00B78BEC /* WebKit.framework */; };
 		A08E9A8F1FA3058D005D116E /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A08E9A871FA3055B005D116E /* IJKMediaFramework.framework */; };
 		A08E9A911FA305C7005D116E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A08E9A901FA305AA005D116E /* AudioToolbox.framework */; };
 		A08E9A931FA30686005D116E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A08E9A921FA30680005D116E /* AVFoundation.framework */; };
@@ -61,6 +63,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A0766DDD1FA9A91600B78BEC /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		A0766DE11FA9A9FD00B78BEC /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		A08E9A801FA3055B005D116E /* IJKMediaPlayer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IJKMediaPlayer.xcodeproj; path = "ijkplayer-ios/ios/IJKMediaPlayer/IJKMediaPlayer.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		A08E9A901FA305AA005D116E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		A08E9A921FA30680005D116E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -93,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0766DE21FA9AA0000B78BEC /* WebKit.framework in Frameworks */,
 				A08E9AA91FA30719005D116E /* MediaPlayer.framework in Frameworks */,
 				A08E9AA81FA3070F005D116E /* MobileCoreServices.framework in Frameworks */,
 				A08E9AA71FA30707005D116E /* OpenGLES.framework in Frameworks */,
@@ -126,6 +131,7 @@
 		A08E9A8E1FA3058D005D116E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A0766DE11FA9A9FD00B78BEC /* WebKit.framework */,
 				A0E7F8CC1FA6F6C4001FA21E /* Security.framework */,
 				A08E9AA31FA306EC005D116E /* VideoToolbox.framework */,
 				A08E9AA21FA306E7005D116E /* UIKit.framework */,
@@ -172,6 +178,7 @@
 				F8D1728D1F7C01F2002F1692 /* AppDelegate.m */,
 				F8D1728F1F7C01F2002F1692 /* ViewController.h */,
 				F8D172901F7C01F2002F1692 /* ViewController.m */,
+				A0766DDD1FA9A91600B78BEC /* index.html */,
 				F8D1729A1F7C01F2002F1692 /* Info.plist */,
 				F8D1729B1F7C01F2002F1692 /* main.m */,
 			);
@@ -268,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8D172991F7C01F2002F1692 /* LaunchScreen.storyboard in Resources */,
+				A0766DE01FA9A91700B78BEC /* index.html in Resources */,
 				F8D172961F7C01F2002F1692 /* Assets.xcassets in Resources */,
 				F8D172941F7C01F2002F1692 /* Main.storyboard in Resources */,
 			);
