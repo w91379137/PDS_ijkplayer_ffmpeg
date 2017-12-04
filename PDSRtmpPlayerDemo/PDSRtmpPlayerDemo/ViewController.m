@@ -42,7 +42,11 @@
 
 - (void)loadVideo {
     //NSString *urlPath = @"http://live.hkstv.hk.lxdns.com/live/hks/playlist.m3u8";
-    NSString *urlPath = @"rtmp://live.hkstv.hk.lxdns.com/live/hks";
+    
+    //http://blog.csdn.net/chinabinlang/article/details/45092297
+    NSString *urlPath = @"rtmp://live.hkstv.hk.lxdns.com/live/hks"; //香港卫视
+    //NSString *urlPath = @"rtmp://v1.one-tv.com/live/mpegts.stream"; //亚太第一卫视
+    
     NSURL *url = [NSURL URLWithString:urlPath];
     self.player = [[IJKFFMoviePlayerController alloc] initWithContentURL:url withOptions:nil];
     
