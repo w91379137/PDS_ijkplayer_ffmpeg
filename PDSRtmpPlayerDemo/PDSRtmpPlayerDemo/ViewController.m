@@ -12,7 +12,7 @@
 
 @interface ViewController ()
 
-@property(nonatomic, strong) IJKFFMoviePlayerController *player;
+@property(nonatomic, strong) IJKFFMoviePlayerController *playerVC;
 @property(nonatomic, strong) IBOutlet UIView *baseView;
 @property(nonatomic, strong) WKWebView *webView;
 
@@ -46,21 +46,44 @@
     //http://blog.csdn.net/chinabinlang/article/details/45092297
     NSString *urlPath = @"rtmp://live.hkstv.hk.lxdns.com/live/hks"; //香港卫视
     //NSString *urlPath = @"rtmp://v1.one-tv.com/live/mpegts.stream"; //亚太第一卫视
+    [self rtmpPlay:urlPath];
     
+    
+    //測試影片播放時 可以 正常縮放
+    [UIView animateWithDuration:5
+                          delay:0
+                        options:UIViewKeyframeAnimationOptionAutoreverse | UIViewKeyframeAnimationOptionRepeat
+                     animations:^{
+                         self.baseView.transform = CGAffineTransformMakeScale(0.5, 0.5);
+                     }
+                     completion:nil];
+    
+    //要測試換網址 stop 重新 開始會怎樣
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        
+        [self.playerVC stop];
+        [self.playerVC.view removeFromSuperview];
+        
+        NSString *urlPath = @"rtmp://v1.one-tv.com/live/mpegts.stream";
+        [self rtmpPlay:urlPath];
+    });
+}
+    
+- (void)rtmpPlay:(NSString *)urlPath {
     NSURL *url = [NSURL URLWithString:urlPath];
-    self.player = [[IJKFFMoviePlayerController alloc] initWithContentURL:url withOptions:nil];
+    self.playerVC = [[IJKFFMoviePlayerController alloc] initWithContentURL:url withOptions:nil];
     
-    self.player.view.frame = self.baseView.bounds;
-    [self.baseView addSubview:self.player.view];
-    self.player.view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    self.playerVC.view.frame = self.baseView.bounds;
+    [self.baseView addSubview:self.playerVC.view];
+    self.playerVC.view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     
     dispatch_async(dispatch_get_main_queue(), ^{
-        [self.player prepareToPlay];
-        [self.player play];
+        [self.playerVC prepareToPlay];
+        [self.playerVC play];
     });
 }
 
--(void)loadHtml {
+- (void)loadHtml {
     NSURL *url = [[NSBundle mainBundle] URLForResource:@"index" withExtension: @"html"];
     NSURLRequest *request = [NSURLRequest requestWithURL: url];
     [self.webView loadRequest: request];
